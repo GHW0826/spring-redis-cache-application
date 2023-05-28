@@ -1,0 +1,22 @@
+
+spring:
+  # redis
+  redis:
+    host: localhost
+    port: 6379
+
+  # db
+  datasource:
+    url: jdbc:mysql://localhost:3306/redis-cache
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: a4s5d6A4s5!
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties:
+      hibernate:
+        format_sql: true # JPA? ???? Hibernate? ?????, ??? SQL? ???? ???.
+    show-sql: true
+    hibernate:
+      ddl-auto: create # DDL(create, alter, drop) ?? ?, DB? ?? ??? ??? ? ??.
